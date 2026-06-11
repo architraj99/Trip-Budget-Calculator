@@ -45,6 +45,18 @@ calculateBtn.addEventListener("click", function() {
     localStorage.setItem("savedTrips", JSON.stringify(savedTrips));
 
     displayTrips();
+
+    document.getElementById("destination").value = "";
+    document.getElementById("travelers").value = "";
+    document.getElementById("transport").value = "";
+
+    document.getElementById("hotel").value = "";
+    document.getElementById("food").value = "";
+    
+    document.getElementById("activities").value = "";
+    document.getElementById("other").value = "";
+    document.getElementById("budget").value = "";
+    
 });
 
 function displayTrips() {
