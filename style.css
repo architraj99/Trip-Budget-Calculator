@@ -62,10 +62,28 @@ button{
     background:#1e3a5f;
     color:white;
     cursor:pointer;
+    border-radius:4px;
+}
+
+button:hover{
+    opacity:0.9;
 }
 
 .result-card p{
     margin:10px 0;
+}
+
+#budgetStatus{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.good{
+    color:green;
+}
+
+.bad{
+    color:#c1121f;
 }
 
 @media(max-width:768px){
