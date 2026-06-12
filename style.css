@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -5,134 +7,163 @@
 }
 
 body{
-    font-family:Arial,sans-serif;
-    background:#f0e7ea;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-image: url('https://github.com/architraj99/Trip-Budget-Calculator/blob/main/budgetbg.jpeg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e2e8f0;
 }
 
 nav{
-    background:#1e3a5f;
-    color:white;
-    padding:18px 8%;
+    background:#0b1d41;
+    color:#f3f4f6;
+    padding:20px 8%;
+    border-bottom: 1px solid #020203;
 }
 
 .container{
     max-width:900px;
-    margin:40px auto;
-    padding:0 20px;
+    margin:50px auto;
+    padding:0 24px;
 }
 
 .calculator-card,
 .result-card,
-.saved-card,
-.tip-card{
-
-    background:rgb(175, 153, 152);
-    padding:25px;
-    border-radius:8px;
-    margin-bottom:20px;
+.saved-card{
     
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    background:#000000;
+    padding:30px;
+    border-radius:12px;
+    margin-bottom:24px;
+    border: 1px solid #1f2937;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 h1{
-    margin-bottom:20px;
-    color:#1e3a5f;
+    margin-bottom:24px;
+    color:#ffffff;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h2{
-    margin-bottom:15px;
+    margin-bottom:16px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 .input-group{
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .input-group label{
     display:block;
-    margin-bottom:6px;
+    margin-bottom:8px;
+    color: #9ca3af;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .input-group input{
     width:100%;
-    padding:10px;
-    border:1px solid #b6a5b2;
-    border-radius:4px;
+    padding:12px;
+    background: #0b0f19;
+    border:1px solid #374151;
+    border-radius:8px;
+    color: #ffffff;
+    font-family: inherit;
+    transition: border-color 0.15s ease;
 }
 
 .input-group input:focus{
-    outline:none;
-    border-color:#1e3a5f;
+    outline: none;
+    border-color: #6366f1;
 }
 
 button{
     width:100%;
-    padding:12px;
+    padding:14px;
     border:none;
 
-    background:#1e3a5f;
-    color:white;
+    background:#602d0e;
+    color:#ffffff;
 
+    font-weight: 600;
+    font-family: inherit;
     cursor:pointer;
-    border-radius:4px;
-    transition:0.3s;
+    border-radius:8px;
+
+    transition: background 0.15s ease;
 }
 
 button:hover{
-    opacity:0.9;
+    background: #281802;
 }
 
 .result-card p{
-    margin:10px 0;
+    margin:12px 0;
+    color: #d1d5db;
 }
 
 #budgetStatus{
-    margin-top:10px;
-    font-weight:bold;
+    margin-top:12px;
+    font-weight:600;
 }
 
 .good{
-    color:green;
+    color:#ed6767;
 }
 
 .bad{
-    color:#c1121f;
+    color:#ef4444;
 }
 
 .trip-item{
-    border:1px solid #ddd;
-    padding:12px;
+    border:1px solid #1f2937;
+    padding:16px;
     margin-top:12px;
-    border-radius:5px;
-    transition:0.3s;
+    border-radius:8px;
+    background: #1f2937;
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .trip-item:hover{
     transform:translateY(-2px);
+    border-color: #374151;
 }
 
 .trip-item h3{
-    color:#1e3a5f;
-    margin-bottom:6px;
+    color:#ffffff;
+    margin-bottom:8px;
+    font-weight: 600;
 }
 
 .trip-item p{
-    margin:5px 0;
+    margin:6px 0;
+    color: #9ca3af;
+    font-size: 14px;
 }
 
 .delete-btn{
-    margin-top:10px;
-    padding:8px 14px;
+    margin-top:12px;
+    padding:8px 16px;
     border:none;
-    background:#0b0a0a;
+    background:#261c1c;
     color:white;
+    font-weight: 500;
+    font-family: inherit;
     cursor:pointer;
-    border-radius:4px;
+    border-radius:6px;
     width:auto;
+    transition: background 0.15s ease;
 }
 
-.tip-card p{
-    line-height:1.6;
-    color:#444;
+.delete-btn:hover{
+    background: #dc2626;
 }
 
 @media(max-width:768px){
@@ -142,14 +173,13 @@ button:hover{
     }
 
     .container{
-        padding:0 12px;
+        padding:0 16px;
     }
 
     .calculator-card,
     .result-card,
-    .saved-card,
-    .tip-card{
-        padding:18px;
+    .saved-card{
+        padding:20px;
     }
 
     h1{
